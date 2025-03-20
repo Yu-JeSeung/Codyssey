@@ -19,7 +19,8 @@ def main():
 
         with open('2-week/Mars_Base_Inventory_danger.csv', 'w', encoding = 'utf-8') as danger_file:
             danger_file.write(header + '\n')
-            for content in top_rate_flammability:
+            top_rate_flammability_desc = sorted(top_rate_flammability, key=lambda v: (float(v.split(',')[4].strip()), v), reverse = True)
+            for content in top_rate_flammability_desc:
                 danger_file.write(content + '\n')
 
         with open('2-week/Mars_Base_Inventory_List.bin', 'wb') as binary_file:
