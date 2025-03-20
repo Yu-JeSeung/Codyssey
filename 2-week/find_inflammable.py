@@ -39,4 +39,23 @@ def print_inventory_list(header, inventory_list):
         print(content)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except FileExistsError as e:
+        print(f'이미 존재하는 파일입니다: {e}')
+    except FileNotFoundError as e:
+        print(f'파일이 존재하지 않습니다: {e}')
+    except PermissionError as e:
+        print(f'권한이 없습니다: {e}')
+    except IsADirectoryError as e:
+        print(f'디렉토리입니다: {e}')
+    except NotADirectoryError as e:
+        print(f'디렉토리가 아닙니다: {e}')
+    except EOFError as e:
+        print(f'EOF 에러: {e}')
+    except OSError as e:
+        print(f'OS 에러: {e}')
+    except BlockingIOError as e:
+        print(f'Blocking IO 에러: {e}')
+    except Exception as e:
+        print(f'알 수 없는 오류: {e}')
