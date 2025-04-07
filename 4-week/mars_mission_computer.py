@@ -113,8 +113,6 @@ class MissionComputer:
                 print("System stoped....")
 
 
-                
-
 
 # 문제 3에서 만든 DummySensor 인스턴스화
 ds = DummySensor()
