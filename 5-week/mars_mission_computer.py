@@ -75,7 +75,7 @@ class MissionComputer:
                 pass
 
             # 메모리 사용률: (MemTotal - MemAvailable) / MemTotal * 100
-            meminfo = self._get_meminfo()
+            meminfo = self.get_mission_computer_info()
             if 'MemTotal' in meminfo and 'MemAvailable' in meminfo:
                 used = meminfo['MemTotal'] - meminfo['MemAvailable']
                 mem_usage = (used / meminfo['MemTotal']) * 100

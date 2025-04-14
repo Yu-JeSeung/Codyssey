@@ -1,9 +1,5 @@
 [MissionComputer Info]
-{'os_name': 'Darwin', 
-'os_version': 'Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:22 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T6041', 
-'cpu_type': 'arm', 
-'cpu_cores': 12, 
-'memory_size_gb': '24.00'}
+{'os_name': 'Darwin', 'os_version': 'Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:22 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T6041', 'cpu_type': 'arm', 'cpu_cores': 12, 'memory_size_gb': '24.00'}
 
 [MissionComputer Load]
-{'cpu_usage_percent': 18.37, 'memory_usage_percent': 40.0}
+{'cpu_usage_percent': 25.59, 'memory_usage_percent': 40.0}
