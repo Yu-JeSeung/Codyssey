@@ -4,7 +4,7 @@ import sys
 
 
 class ChatClient:
-    def __init__(self, host: str = '127.0.0.1', port: int = 5000) -> None:
+    def __init__(self, host: str = '127.0.0.1', port: int = 8888) -> None:
         self.host = host
         self.port = port
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -67,4 +67,4 @@ class ChatClient:
 
 if __name__ == '__main__':
     # 필요 시 호스트/포트를 수정하여 사용한다.
-    ChatClient(host='127.0.0.1', port=5000).start()
+    ChatClient(host='127.0.0.1', port=8888).start()

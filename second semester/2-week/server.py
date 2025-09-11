@@ -4,7 +4,7 @@ from typing import Dict, Tuple
 
 
 class ChatServer:
-    def __init__(self, host: str = '0.0.0.0', port: int = 5000) -> None:
+    def __init__(self, host: str = '0.0.0.0', port: int = 8888) -> None:
         self.host = host
         self.port = port
         self.server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -142,4 +142,4 @@ class ChatServer:
 
 
 if __name__ == '__main__':
-    ChatServer(host='0.0.0.0', port=5000).start()
+    ChatServer(host='0.0.0.0', port=8888).start()
