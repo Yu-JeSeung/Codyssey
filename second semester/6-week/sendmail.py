@@ -51,6 +51,7 @@ class MailSender:
         <body>
           <div class="wrap">
             <h1>{name}님, 안녕하세요!</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6GiUDmz9Q_DgAwzdu1tsCUEi6Lu4jxxi1Lw&s">
             <p>이메일 테스트 안내 드립니다. HTML 형식으로 작성되었으며
             수신자별로 이름이 개인화되어 전송됩니다.</p>
             <p><a class="btn" href="https://www.naver.com" target="_blank" rel="noreferrer">네이버 바로가기</a></p>
@@ -64,8 +65,6 @@ class MailSender:
 
 이 메일은 HTML 형식으로 작성되었으며
 수신자별로 이름이 개인화되어 전송됩니다.
-
-네이버 바로가기: https://www.naver.com
 
 (본 메일은 과제용 테스트 메일입니다.)
 """.strip()
