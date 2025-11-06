@@ -1,10 +1,3 @@
-# 실행 방법 : python3 todo.py
-# 테스트 명령어
-#   - Todo 추가
-#   curl -X POST http://localhost:8000/add_todo -H "Content-Type: application/json" -d '{"task": "과제하기", "description": "FastAPI 프로젝트"}'
-#   - Todo 목록 조회
-#   curl -X GET http://localhost:8000/retrieve_todo
-
 from fastapi import FastAPI, APIRouter, HTTPException, Request
 from typing import Dict, List, Any
 import uvicorn
